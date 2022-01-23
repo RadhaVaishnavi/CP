@@ -1,0 +1,38 @@
+#include<stdio.h>
+void main()
+{
+    int choice,r,l,w,b,h;
+    float area;
+    while(1)
+{
+    printf("input 1 for area of circle\n");
+   printf("input 2 for area of rectangle\n");
+   printf("input 3 for area of triangle\n");
+   printf("input 0 for exit\n");
+   printf("input your choice :");
+   scanf("%d",&choice);
+   if(choice==0)
+   {
+       break;
+   }
+   switch(choice)
+   {
+       case 1:
+       printf("input radius of the circle:");
+       scanf("%d",&r);
+       area=3.14*r*r;
+       break;
+       case 2:
+       printf("input length and width of the rectangle:");
+       scanf("%d%d",&l,&w);
+       area=l*w;
+       break;
+       case 3:
+       printf("input the base and height of the triangle:");
+       scanf("%d%d",&b,&h);
+       area=(b*h)/2;
+       break;
+   }
+   printf("The area is : %f\n",area);
+   }
+}
